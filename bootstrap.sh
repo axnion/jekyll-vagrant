@@ -19,4 +19,5 @@ sudo gem install github-pages
 sudo gem install redcarpet
 
 apt-get -y install nodejs
+echo "alias serve='jekyll serve --host 0.0.0.0 --force_polling'" >> .bashrc
 echo "cd /vagrant/www" >> .bashrc
