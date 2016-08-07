@@ -6,7 +6,7 @@ Environment for developing jekyll projects locally.  Blog post at http://www.jam
 ## Setup
 1. Make sure Vagrant and your favorite virtual machine are installed.
 2. Clone this repository
-3. Open command prompt to location of the Vagrantfile and run ```vagrant up```
+3. Open command prompt to location of the Vagrantfile and run ```vagrant up --provider=virtualbox```
 4. Jekyll and all it's dependencies are installed!
 
 ## Existing Jekyll Projects
@@ -19,4 +19,4 @@ Environment for developing jekyll projects locally.  Blog post at http://www.jam
 1.  Open a command prompt to location of the Vagrantfile and run ```vagrant ssh```
 2.  Once on the VM prompt ```cd /vagrant```
 3.  Create new site with ```jekyll new <sitename>```
-4.  Start the jekyll server ```jekyll serve --force_polling``` (force polling is required with vagrant because of share)
+4.  Start the jekyll server ```jekyll serve --host 0.0.0.0 --force_polling``` (force polling is required with vagrant because of share)
